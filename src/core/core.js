@@ -29,7 +29,6 @@ export default function generate360view(containerId) {
     images = document.querySelectorAll("#" + containerId + " div");
     const rotated = container.getAttribute("data-rotated");
     if (false) { hideImages(); }
-    
     if (rotated !== 'true') {
         rotateTimer = setInterval(function(){ 
             if (current === (images.length - 1)) {
@@ -39,7 +38,7 @@ export default function generate360view(containerId) {
             } else {
                 toggleImages(1); 
             }
-        }, 100);
+        }, 80);
     }
 
     
