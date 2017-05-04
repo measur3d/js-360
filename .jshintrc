@@ -12,6 +12,7 @@
   "jasmine": true,
   "esnext": true,
   "globals": {
-    "Rx": false
+    "Rx": false,
+    "console": false
   }
 }
