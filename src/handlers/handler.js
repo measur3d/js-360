@@ -58,14 +58,14 @@ function counterMapper(x) {
 
 export default function getHandler(container) {
     const start = Observable.merge(
-        Observable.fromEvent(container, 'mousedown'),
+        Observable.fromEvent(container, 'mouseenter'),
         Observable.fromEvent(container, 'touchstart')
     )
         .do(preventDefault)
         .do(setStartingPosition);
 
     const end = Observable.merge(
-        Observable.fromEvent(container, 'mouseup'),
+        Observable.fromEvent(container, 'mouseleave'),
         Observable.fromEvent(container, 'touchend')
     )
         .do(preventDefault)

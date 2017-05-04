@@ -26,8 +26,9 @@ export default function generate360view(containerId) {
 
     const container = document.getElementById(containerId);
     const handler = getHandler(container);
-    images = document.querySelectorAll("#" + containerId + " img");
-    hideImages();
+    images = document.querySelectorAll("#" + containerId + " div");
+    if (false) { hideImages(); }
+    
 
     handler.subscribe(toggleImages);
 }
