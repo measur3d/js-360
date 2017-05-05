@@ -37,6 +37,8 @@ export default function generate360view(containerId, imgSelector, rotate) {
                 toggleImages(1); 
             }
         }, 80);
+    } else {
+        handler.subscribe(toggleImages);
     }
 
     
